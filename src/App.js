@@ -18,7 +18,9 @@ function App() {
     } else {
       setMode('light');
       document.body.style.backgroundColor = 'white';
-      showAlert("Light mode has been enabled", "success");
+      setTimeout(() => {
+        showAlert("Light mode has been enabled", "success");
+      }, 2000);
       console.log(mode);
     }
   }
